@@ -4,13 +4,13 @@ public class User {
     private String name;
     private int age;
 
-    // Constructor
+  
     public User(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
-    // Getters and Setters
+   
     public String getName() {
         return name;
     }
@@ -27,19 +27,18 @@ public class User {
         this.age = age;
     }
 
-    // Overriding toString()
     @Override
     public String toString() {
         return "User{name='" + name + "', age=" + age + "}";
     }
 
-    // Overriding hashCode()
+   
     @Override
     public int hashCode() {
         return name.hashCode() + age;
     }
 
-    // Overriding equals()
+   
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
