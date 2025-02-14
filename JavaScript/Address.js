@@ -1,7 +1,7 @@
-const Address = prompt("Please enter your address:"); // Get input from user
+const Address = prompt("Please enter your address:");
 
 if (Address) {
-    alert(`Your address is: ${Address}`); // Display the entered address
+    alert(` address is: ${Address}`); 
 } else {
-    alert("You didn't enter an address."); // Handle empty input
+    alert(" didn't enter an address."); 
 }
