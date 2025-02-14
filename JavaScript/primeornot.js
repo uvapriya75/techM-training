@@ -1,4 +1,4 @@
-const a= 21; // Change this value to test different numbers
+const a= 21; 
 
 function isPrime(n) {
     if (n < 2) return false;
