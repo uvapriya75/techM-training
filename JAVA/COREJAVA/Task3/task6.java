@@ -7,7 +7,7 @@ import java.util.Date;
 public class LastModifiedDate {
     public static void main(String[] args) {
         // the file path
-        String filePath = "\"C:\\Users\\uva\\Downloads\\index2 (1).txt\""; // Change this to the actual file path
+        String filePath = "\C:\\Users\\uva\\Downloads\\index2 (1).txt\"; // Change this to the actual file path
 
         // File object
         File file = new File(filePath);
