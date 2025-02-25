@@ -1,20 +1,24 @@
-
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-function EvenNumber() {
-	return <h1>EvenNumber!</h1>;
+function EvenNumber({ num }) {
+	return <h1>{num} is an Even Number!</h1>;
 }
-function OddNumber() {
-	return <h1>OddNumber!</h1>;
+
+function OddNumber({ num }) {
+	return <h1>{num} is an Odd Number!</h1>;
 }
 
 function CheckNumber(props) {
-  const isNum = props.num;
-  if (isNum%2==0) {
-    return <EvenNumber/>;
+  const parsedNum = Number(props.num); 
+  if (isNaN(parsedNum)) {
+    return <h1>Invalid Number</h1>;
   }
-  return <OddNumber/>;
+
+  if (parsedNum % 2 === 0) {
+    return <EvenNumber num={parsedNum} />;
+  }
+  return <OddNumber num={parsedNum} />;
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
