@@ -10,7 +10,7 @@ function OddNumber({ num }) {
 }
 
 function CheckNumber(props) {
-	const parsedNum = Number(props.num); // Convert string to number
+	const parsedNum = Number(props.num); 
 
 	if (isNaN(parsedNum)) {
 		return <h1>Invalid Number</h1>;
